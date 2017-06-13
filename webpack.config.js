@@ -45,7 +45,8 @@ module.exports = {
     // devtool: 'inline-source-map',
     output: {
         filename: 'index_bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -86,7 +87,9 @@ module.exports = {
         compress: true,
         hot: true,
         stats: "errors-only",
-        open: true
+        open: true,
+        port: 3000,
+        historyApiFallback: true
     },
     plugins: [
         new HtmlWebpackPlugin({

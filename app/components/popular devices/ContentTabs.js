@@ -18,8 +18,8 @@ class ContenTabs extends React.Component {
         const tabsLinks = ['Popular', 'Tab Name 2', 'Tab Name 3'];
         return(
             <ul className='popular-devices__tabs'>
-                {tabsLinks.map(item => <li className={'popular-devices__tabs-name ' + (item === this.state.selectedTab ? 'active-tab' : '')}
-                        onClick={this.updateSelectTab.bind(null, item)}key={item}>{item}</li>)}
+                {tabsLinks.map((item, index) => <li className={'popular-devices__tabs-name ' + (index === this.state.selectedTab ? 'active-tab' : '')}
+                        onClick={this.updateSelectTab.bind(null, index)}key={item}>{item}</li>)}
             </ul>
         )
     };

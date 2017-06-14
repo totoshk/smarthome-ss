@@ -10,7 +10,6 @@ class Graph extends React.Component {
             <section className='graphics clearfix'>
                 <h3 className='graphics__title'>Расход электроэнергии</h3>
                 <p>Расход электроэнергии за июнь</p>
-                {console.log(this.props.data)}
                 <AreaChart width={600} height={200} data={this.props.data} syncId="anyId"
                     margin={{top: 10, right: 30, left: 0, bottom: 0}}>
                     <XAxis dataKey="name"/>

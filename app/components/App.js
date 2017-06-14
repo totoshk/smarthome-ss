@@ -10,6 +10,8 @@ const HomePage = require('../pages/Home');
 const ReactRouter = require('react-router-dom');
 const Router = ReactRouter.BrowserRouter;
 const Route = ReactRouter.Route;
+// import {Provider} from 'react-redux';
+// import store, {history} from '../store';
 
 
 

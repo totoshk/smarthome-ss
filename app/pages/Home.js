@@ -2,7 +2,7 @@ const React = require('react');
 const Navbar = require('../components/navigation/Navbar');
 const Header = require('../components/header/Header');
 const PopularDevices = require('../components/popular devices/PopularDevices');
-const MainContent = require('../components/MainContent');
+const MainContent = require('../layouts/MainContent');
 const GraphSection = require('../components/graph section/GraphSection');
 const HomePlan = require('../components/home plan/HomePlan');
 

@@ -12,8 +12,8 @@ class PopularDevices extends React.Component {
             {name: 'Cleaner', imageSrc: require('../../images/dev-cleaner.png'), status: "it's OK"},
             {name: 'Wi-Fi', imageSrc: require('../../images/dev-wifi.png'), status: "it's OK"},
             {name: 'Water', imageSrc: require('../../images/dev-water.png'), status: "it's OK"},
-            {name: 'Water', imageSrc: require('../../images/dev-water.png'), status: "it's OK"},
-            {name: 'Water', imageSrc: require('../../images/dev-water.png'), status: "Ахтунг! Горим!"},
+            {name: 'Water1', imageSrc: require('../../images/dev-water.png'), status: "it's OK"},
+            {name: 'Water2', imageSrc: require('../../images/dev-water.png'), status: "Ахтунг! Горим!"},
         ];
         return (
             <section className='popular-devices clearfix'>

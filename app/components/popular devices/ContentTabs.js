@@ -4,7 +4,7 @@ class ContenTabs extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            selectedTab: 'Popular'
+            selectedTab: 0
         };
         this.updateSelectTab = this.updateSelectTab.bind(this)
     };

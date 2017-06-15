@@ -1,19 +1,24 @@
 import {createStore, compse} from 'redux';
-import {syncHistoryWythStore} from 'react-router-redux';
+import {syncHistoryWithStore} from 'react-router-redux';
 import {browserHistory} from 'react-router';
 
-//import the root reducer
-
+//import root reducer
 import rootReducer from '../reducers/index';
 
-//import some data
-import dataDevices from '../data/dataDevices';
-//create an object for the default data
+//import default data
+import comments from '../data/comments';
+import posts from '../data/posts';
+
+//create an object for default data 
 
 const defaultState = {
-??
-};
+    posts,
+    comments
+}
 
-const store = createStore(rootReducer, defaultState);
-export const histore = syncHistoryWythStore(browserHistory, store);
+//creating of store
+
+const store = createStore(rootReducer, defaultState); //принимает корневой редюсер и дефолтное состояние
+export const history = syncHistoryWithStore(browserHistory, store);
+
 export default store;

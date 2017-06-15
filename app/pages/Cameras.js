@@ -1,7 +1,7 @@
 const React = require('react');
 const Navbar = require('../components/navigation/Navbar');
 const Header = require('../components/header/Header');
-const MainContent = require('../components/MainContent');
+const MainContent = require('../layouts/MainContent');
 
 class CamerasPage extends React.Component {
     render () {
